@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  div.container
+    h1 A mi no me CENSARON!
+    p Esta es una pequeña aplicación la cual a través de 
+      a(href="http://twitter.com")
+        img(src="images/twitter-logo.png", alt="")
+      | &nbsp; contabiliza la gente que no fue CENSADA durante el 
+      b censo 2012
+      br
+      br 
+      | Si quieres sumarte escribe un twit con el #nomecensaron
+      br
+      br
+      | Si en tu casa fueron mas de uno los NO censados escribe en el twit: #nomecensaron #3
+      br
+      b (donde #3 es la cantidad de personas en tu casa incluyéndote)
+    div
+      p.count
+        | No CENSADOS: 
+        b
+          = count
+    h5
+      | by 
+      a(href="http://twitter.com/z3robatu", target="_blank") z3robatu
